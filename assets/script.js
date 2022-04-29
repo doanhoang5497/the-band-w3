@@ -28,4 +28,15 @@ if (counter <= 3) {
             counter = 1;
         }
     }, 3000)
+};
+for (var i = 0; i < document.getElementsByClassName('btnBuy').length; i++) {
+    document.getElementsByClassName('btnBuy')[i].onclick = () => {
+        document.getElementById('buyModal').style.display = "block";
+    }
 }
+for (var i = 0; i < document.getElementsByClassName('btnClose').length; i++) {
+    document.getElementsByClassName('btnClose')[i].onclick = () => {
+        document.getElementById('buyModal').style.display = "none";
+    }
+}
+

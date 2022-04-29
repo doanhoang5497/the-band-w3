@@ -8,7 +8,7 @@
     <title>The Band</title>
     <link rel="stylesheet" href="./assets/style.css">
     <script src="https://kit.fontawesome.com/a6032a8ace.js" crossorigin="anonymous"></script>
-    <script src="./assets/script.js"></script>
+    <script src="./assets/script.js" defer></script>
 </head>
 
 <body>
@@ -96,7 +96,7 @@
                         <div class="Tour__buy-item-txt-name">New York</div>
                         <span class="Tour__buy-item-txt-opacity">Fri 27 Nov 2016</span>
                         <span>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</span>
-                        <button>Buy Tickets</button>
+                        <button class="btnBuy">Buy Tickets</button>
                     </div>
                 </div>
                 <div class="Tour__buy-item">
@@ -105,7 +105,7 @@
                         <div class="Tour__buy-item-txt-name">Paris</div>
                         <span class="Tour__buy-item-txt-opacity">Fri 28 Nov 2016</span>
                         <span>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</span>
-                        <button>Buy Tickets</button>
+                        <button class="btnBuy">Buy Tickets</button>
                     </div>
                 </div>
                 <div class="Tour__buy-item">
@@ -114,7 +114,33 @@
                         <div class="Tour__buy-item-txt-name">San Francisco</div>
                         <span class="Tour__buy-item-txt-opacity">Fri 29 Nov 2016</span>
                         <span>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</span>
-                        <button>Buy Tickets</button>
+                        <button class="btnBuy">Buy Tickets</button>
+                    </div>
+                </div>
+            </div>
+            <div id="buyModal" class="modal">
+
+                <div class="buyModal-title">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Tickets
+                </div>
+                <div class="buyModal-content">
+                    <div class="buyModal-content-title">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Tickets, $15 per person
+                    </div>
+                    <input type="text" placeholder="How many?">
+                    <div class="buyModal-content-title">
+                        <i class="fa-solid fa-user"></i>
+                        Send To
+                    </div>
+                    <input type="text" placeholder="Enter email">
+                    <button class="btnPay">Pay<i class="fa-solid fa-check"></i></button>
+                    <div class="buyModal-content-close">
+                        <button class="btnClose">Close <i class="fa-solid fa-xmark"></i></button>
+                        <span>
+                            Need <a href="#" style="color: #2196F3;">help?</a>
+                        </span>
                     </div>
                 </div>
             </div>
